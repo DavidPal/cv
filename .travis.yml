@@ -1,0 +1,17 @@
+sudo: required
+dist: xenial
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+script:
+- mkdir _build
+- pdflatex -interaction=nonstopmode -halt-on-error cv-David-Pal.tex
+deploy:
+  provider: releases
+  skip_cleanup: true
+  on:
+    repo: DavidPal/cv
+    tags: true
+  api_key:
+    secure: SFBLQf9W0jZDV1yA47NHr4gqLQvdmCWSJSdxrf+FrltIkNbx5W3MEbYRmEiYhBeOR7bbNPWMl3+s4ZY1FlqR50UtNZ3X+wVKyw4khZzXFASNMfkj4dtdQe0eZAR/KwOZrGVuI8AGEISrMDxcu3HmBErQmqeC46rWZJsB/uOmrTMaT3ZiGsj6Mrvp9BsCGWLDS8o1odI+zsNkyuEhSA0V3y+jR0gjMUUBApb0AWjID5gSzEGK9sDUazlFhM+bAQD2uEB77C5zO+wWgp3Khlwr5VSxcqRamZ1JLQO9GahuVu8QQyHokxalZ9nlKhgDR4VkWvO2D/wV5QneVv8vWGKG364ZQgvs2DA6MhXenku2qmtlW3iUxyMRF/9JfZa23QNQqYyOSXsVIOd8Hbh4OYLtY2Bfsw8ZlAUegPRLg7RVlDRpnJsOknIGQnHLP0I8+C4HGTONQM5SNwubLOFXFhOt/tZHh/a2TSUPtqZF1kTNGmdVyQoHeJDYeBXjugRXFgikeSrr+fJPi70Vp7ZI18pFf6kucw8zl/OwLqL26Ca4DNTrrI/edPflKCr/hM75yeh2gtMpFcCYupvv9vYaiaE4f2soZjLyXv6PJ81cxgJE0pefCkEJntvBhBK6rZcBlKotuoA+tmOuZjS+xg98qAyJKgVz80z9blV1+TCjuam0MqY=
+  file: cv-David-Pal.pdf
