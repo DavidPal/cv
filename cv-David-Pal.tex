@@ -1,8 +1,11 @@
-\documentclass[10pt]{article}
+\documentclass[9pt]{article}
 
 \usepackage{fullpage}
+\usepackage{longtable}
 \usepackage{palatino}
 \usepackage{hyperref}
+
+\newcommand{\smallfont}{\small}
 
 \begin{document}
 
@@ -16,7 +19,7 @@
 %
 \noindent
 \begin{minipage}[t]{10cm}
-\textbf{Home Address:} \\
+\textbf{Home address:} \\
 1 River Place, Apt. 2918 \\
 New York, NY 10036 \\
 USA \\
@@ -32,49 +35,88 @@ home phone:  & +1 (917) 965 2187 \\
 \begin{minipage}[t]{10cm}
 \textbf{Work address:} \\
 Yahoo/Oath Research \\
-770 Broadway, 5th Floor \\
+5th Floor \\
+770 Broadway \\
 New York, NY 10003 \\
 USA \\
 \\
 email: \href{mailto:dpal@oath.com}{\texttt{dpal@oath.com}} \\
 \end{minipage}
 
-\section*{Education and Employment}
+\section*{Employment}
 
-\begin{tabular}{@{}lp{13cm}}
+\begin{longtable}{@{}lp{13cm}}
 Sep 2014 -- present & \textbf{Sr. Research Scientist at Yahoo/Oath Research, New York, NY} \\
-& {\small Academic research in machine learning.
-Research, development and implementation of machine learning models of anti-spam filters for Yahoo Mail.} \\
+& {\smallfont I am the lead of the anti-spam and anti-phishing research team for Yahoo Mail. I
+build machine learning models that filter spam and phish emails. The work is
+done in Java, Scala, and Python. I also do research in online
+algorithms for machine learning and in statistical machine learning. I publish
+at top machine learning conferences (NIPS, ICML, COLT). This year, I am an area
+research chair for NIPS 2018.} \\
 \\
 Sep 2011 -- Sep 2014 & \textbf{Software Engineer at Google, New York, NY} \\
-& {\small Backend development of Google Ad Exchange platform, with focus on advertising auction mechanisms
-and revenue optimization for publishers and Google.} \\
+& {\smallfont I was a backend engineer on the Google Ad Exchange team. I co-designed,
+co-patented and implemented the ``passback'' ad auction, which---to this
+day---processes all the 100+ billion AdX impressions per day and generates
+revenue of tens of billions of dollars per year. I also worked data pipelines
+for reserve price optimization for AdX. The work was done in C++ and
+Python.} \\
 \\
+Jul 2007 -- Sep 2007 & \textbf{Research Internship at Google, New York, NY} \\
+& {\smallfont I designed an ad action for AdWords that unifies GSP (generalized
+second price) and VCG (Vickrey-Clarke-Groves) auctions. I didn't write a single
+line of code; I design algorithms on paper and proved mathematical theorems
+about them. The end result was an academic paper and an algorithm that Google
+later used.} \\
+\\
+Jun 2004 -- Dec 2004 & \textbf{Programmer at Applied Software Consultants, Bratislava, Slovakia} \\
+& {\smallfont I was a software engineer in a small family-run company that develops
+software for elementary schools and high schools. I worked on a desktop
+application to keep track of students, their grades, etc. The work was done in C\# and PHP.} \\
+\\
+Jun 2000 -- Jun 2004 & \textbf{Webmaster of Internet Problem Solving Contest} \\
+& {\smallfont I was the webmaster and a co-organizer of the Internet Problem
+Solving Contest. This is the first programming contest in the world in which
+contestants submit output data instead of source code, which allows them to use
+any programming language. The work was done in PHP, Pascal and C.} \\
+\end{longtable}
+
+\clearpage
+
+\section*{Education}
+
+\begin{longtable}{@{}lp{13cm}}
 Jul 2009 -- Jun 2011 & \textbf{Postdoctoral Fellow at Department of Computing Science,} \\
 & \textbf{University of Alberta, Edmonton, AB, Canada} \\
-& {\small Advisor: Prof. Csaba Szepesv\'ari} \\
-& {\small Theoretical research in machine learning, statistics and probability theory.} \\
+& {\smallfont Advisor: Prof. Csaba Szepesv\'ari} \\
+& {\smallfont I did fundamental research in online algorithms for machine learning and in statistics.
+I also worked on automated creation of schedules for nurses in the Canadian province of Alberta. The idea
+was later spun off into a start-up of which I am a co-founder.} \\
 \\
 Jan 2005 -- May 2009 & \textbf{Ph.D. in Computer Science, School of Computer Science,} \\
 & \textbf{University of Waterloo, Waterloo, ON, Canada} \\
-& {\small Advisor: Prof. Shai Ben-David} \\
-& {\small Ph.D. Thesis: Contributions to Unsupervised and Semi-Supervised Learning} \\
-\\
-Jul 2007 -- Sep 2007 & \textbf{Research Internship at Google, New York, NY} \\
-& {\small Theoretical research in game theory and web advertisement auctions.} \\
-\\
-Jun 2004 -- Dec 2004 & \textbf{Programmer at Applied Software Consultants, Bratislava, Slovakia} \\
-& {\small Development of C\# database desktop application for elementary and high schools to keep track of their students, their grades etc.} \\
+& {\smallfont Advisor: Prof. Shai Ben-David} \\
+& {\smallfont Ph.D. Thesis: Contributions to Unsupervised and Semi-Supervised Learning} \\
 \\
 Sep 1999 -- May 2004 & \textbf{``Magister Degree'' in Computer Science,} \\
 & \textbf{Faculty of Mathematics, Physics and Informatics,} \\
 & \textbf{Comenius University, Bratislava, Slovakia} \\
-& {\small Advisor: Prof. Martin \v{S}koviera} \qquad {\small Thesis: Steiner Colorings of Cubic Graphs} \\
-\end{tabular}
+& {\smallfont Advisor: Prof. Martin \v{S}koviera} \qquad {\smallfont Thesis: Steiner Colorings of Cubic Graphs} \\
+\end{longtable}
+
+
+
+\section*{Skills}
+
+\begin{itemize}
+\item C, C++, C\#, Python, Java, Scala, PHP, Perl, HTML, CSS, Matlab, Maple, LaTeX
+\item Language skills: fluent English, basic German, native Slovak, quasi-native Czech
+\end{itemize}
 
 \section*{Service}
 
 \begin{itemize}
+\item Area chair NIPS 2018
 \item Program Comittee member of COLT 2017
 \item Reviewer for ICML 2016--2018, NIPS 2008--2014, 2016, COLT 2007, 2008, 2016, AISTATS 2017--2018, STOC 2008, AAAI 2016, IJCAI 2016
 \item Organizer of the Internet Problem Solving Contest, \url{http://ipsc.ksp.sk/}, 2000 -- 2004, 2007
@@ -94,18 +136,6 @@ Sep 1999 -- May 2004 & \textbf{``Magister Degree'' in Computer Science,} \\
 \item Winner of Internet Problem Solving Contest 1999, High School Division
 \item Top 10 at Slovak National Olympiad in Informatics in 1997, 1998, 1999
 \item Top 10 at Slovak National Olympiad in Physics in 1999
-\end{itemize}
-
-\renewcommand{\refname}{Publications}
-\nocite{*}
-\bibliography{publications}
-\bibliographystyle{plainyr-rev}
-
-\section*{Skills}
-
-\begin{itemize}
-\item C, C++, C\#, Python, Java, Scala, PHP, Perl, HTML, CSS, Matlab, Maple, LaTeX
-\item Language skills: fluent English, basic German, native Slovak, quasi-native Czech
 \end{itemize}
 
 \section*{Personal}
@@ -144,6 +174,11 @@ Rutgers University, Piscataway, NJ, USA \\
 email: \href{mailto:muthu@cs.rutgers.edu}{\texttt{muthu@cs.rutgers.edu}} \\
 www: \url{http://www.cs.rutgers.edu/~muthu/}
 \end{minipage}
+
+\renewcommand{\refname}{Publications}
+\nocite{*}
+\bibliography{publications}
+\bibliographystyle{plainyr-rev}
 
 
 \end{document}
