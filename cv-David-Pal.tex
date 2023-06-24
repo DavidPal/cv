@@ -3,7 +3,8 @@
 \usepackage{fullpage}
 \usepackage{longtable}
 \usepackage{palatino}
-\usepackage{hyperref}
+\usepackage[usenames,svgnames]{xcolor}
+\usepackage[pdftex,pdfusetitle,colorlinks=true,linkcolor=NavyBlue,citecolor=NavyBlue,urlcolor=NavyBlue,breaklinks=true,backref=page]{hyperref}
 
 \newcommand{\smallfont}{\small}
 
@@ -18,78 +19,33 @@
 
 %
 \noindent
-\begin{minipage}[t]{10cm}
-\textbf{Home address:} \\
-1 River Place, Apt. 2918 \\
-New York, NY 10036 \\
-USA \\
-
+%
+\begin{minipage}{10cm}
 \begin{tabular}{@{}ll}
-email:       & \href{mailto:davidko.pal@gmail.com}{\texttt{davidko.pal@gmail.com}} \\
-web:         & \url{http://david.palenica.com/} \\
-cell phone:  & +1 (646) 206 4832 \\
-home phone:  & +1 (917) 965 2187 \\
+E-mail:      & \href{mailto:davidko.pal@gmail.com}{\textbf{\texttt{davidko.pal@gmail.com}}} \\[0.1cm]
+Web:         & \textbf{\url{http://david.palenica.com/}} \\[0.1cm]
+Cell phone:  & +1 (646) 206 4832 \\[0.1cm]
+Home phone:  & +1 (917) 965 2187 \\[0.1cm]
 \end{tabular}
 \end{minipage}
 %
-\begin{minipage}[t]{10cm}
-\textbf{Work address:} \\
-50 Beale St \#600 \\
-San Francisco, CA 94105 \\
+\begin{minipage}{10cm}
+1 River Place, Apt. 2918 \\
+New York, NY 10036 \\
 USA \\
-\\
-email: \href{mailto:david.pal@instacart.com}{\texttt{david.pal@instacart.com}} \\
 \end{minipage}
 
-\section*{Employment}
+
+\section*{Objective}
+My interests are machine learning, algorithms, game theory and combinatorics.
+
+\section*{Academics}
 
 \begin{longtable}{@{}lp{13cm}}
-January 2021 -- present & \textbf{Staff Machine Learning Engineer at Instacart, New York, NY} \\
-& {\smallfont I am working on ranking and monetization of sponsored products. I
-am working remotely from New York.}
-\\[0.3cm]
-January 2022 -- May 2022 & \textbf{Adjunct Professor at Tandon School of Engineering, New York University} \\
-& {\smallfont I taught a graduate course Statistical and Computational
-Foundations of Machine Learning.}
-\\[0.3cm]
-May 2019 -- December 2020 & \textbf{Principal Applied Researcher at Expedia Group, New York, NY} \\
-& {\smallfont I worked on computational marketing and advertising.}
-\\[0.3cm]
-Sep 2014 -- May 2019 & \textbf{Senior Research Scientist at Yahoo/Oath/Verizon Media Research, New York, NY} \\
-& {\smallfont I built machine learning models that filter spam and phish emails.
-Many of the models were based on large scale clustering of emails. I designed
-implemented the first version of the clustering algorithm. The work was done in
-Java, Scala, and Python. The system was patented. I did also theoretical
-research in online algorithms for machine learning and in statistical machine
-learning, published at NIPS and ICML. I am reviewer for COLT, ICML and area
-chair for NIPS.}
-\\[0.3cm]
-Sep 2011 -- Sep 2014 & \textbf{Software Engineer at Google, New York, NY} \\
-& {\smallfont I was a backend engineer on the Google Ad Exchange team. I
-co-designed, co-patented and implemented the ``passback'' ad auction algorithm,
-which---to this day---processes all the 100+ billion AdX impressions per day and
-generates revenue of tens of billions of dollars per year. I also worked on the
-data pipelines for reserve price optimization for AdX. The work was done in C++
-and Python.}
-\\[0.3cm]
-Jul 2007 -- Sep 2007 & \textbf{Research Internship at Google, New York, NY} \\
-& {\smallfont I co-designed an ad auction algorithm for AdWords that unifies GSP
-(generalized second price) and VCG (Vickrey-Clarke-Groves) auctions and proved
-mathematical theorems about it. The end result was an academic paper with description
-of the algorithm and its properties that Google later used.}
-\\[0.3cm]
-Jun 2004 -- Dec 2004 & \textbf{Programmer at Applied Software Consultants, Bratislava, Slovakia} \\
-& {\smallfont I was a software engineer in a small family-run company that
-develops software for elementary schools and high schools. I worked on a desktop
-application that keeps track of students, their grades, etc. The work was done in
-C\# and PHP.}
-\end{longtable}
-
-\clearpage
-
-\section*{Education}
-
-\begin{longtable}{@{}lp{13cm}}
+January 2022 -- May 2022 & \textbf{Adjunct Professor at Tandon School of Engineering,} \\
+& \textbf{New York University, New York, NY} \\
+& {\smallfont Statistical and Computational Foundations of Machine Learning.} \\
+\\
 Jul 2009 -- Jun 2011 & \textbf{Postdoctoral Fellow at Department of Computing Science,} \\
 & \textbf{University of Alberta, Edmonton, AB, Canada} \\
 & {\smallfont Advisor: Prof. Csaba Szepesv\'ari} \\
@@ -109,21 +65,60 @@ Sep 1999 -- May 2004 & \textbf{``Magister Degree'' in Computer Science,} \\
 & {\smallfont Advisor: Prof. Martin \v{S}koviera} \qquad {\smallfont Thesis: Steiner Colorings of Cubic Graphs} \\
 \end{longtable}
 
+\clearpage
 
+\section*{Employment}
 
-\section*{Skills}
+\begin{longtable}{@{}lp{13cm}}
+January 2021 -- present & \textbf{Staff Machine Learning Engineer at Instacart, New York, NY} \\
+& {\smallfont Ranking and monetization of sponsored products.
+I built pipeline for training click-through rate prediction models using Tensorflow. I co-authored two patents.}
+\\[0.3cm]
+May 2019 -- December 2020 & \textbf{Principal Applied Researcher at Expedia Group, New York, NY} \\
+& {\smallfont Advertising bidding algorithms. I lead a team of 3 researchers.
+I built two libraries for solving large scale optimization problems using Apache Spark.}
+\\[0.3cm]
+Sep 2014 -- May 2019 & \textbf{Senior Research Scientist at Yahoo/Oath/Verizon Media Research, New York, NY} \\
+& {\smallfont I built machine learning models that filter spam and phish emails.
+Many of the models were based on large scale clustering of emails. I designed and
+implemented the first version of the clustering algorithm. The work was done in
+Java, Scala, and Python. The system was patented. I also did theoretical
+research in machine learning, published at NIPS and ICML. I served as a reviewer for COLT, ALT,
+ICML and area chair for NIPS. I mentored 4 research interns.}
+\\[0.3cm]
+Sep 2011 -- Sep 2014 & \textbf{Software Engineer at Google, New York, NY} \\
+& {\smallfont I was a backend engineer on the Google Ad Exchange team. I
+co-designed, co-authored a patent and implemented the ``passback'' ad auction algorithm,
+which---to this day---processes all the 100+ billion AdX impressions per day and
+generates revenue of tens of billions of dollars per year. I also worked on the
+data pipelines for reserve price optimization for AdX. The work was done in C++
+and Python.}
+\\[0.3cm]
+Jul 2007 -- Sep 2007 & \textbf{Research Internship at Google, New York, NY} \\
+& {\smallfont I co-designed an ad auction algorithm for AdWords that unifies GSP
+(generalized second price) and VCG (Vickrey-Clarke-Groves) auctions and proved
+mathematical theorems about it. The end result was an academic paper with description
+of the algorithm and its properties that Google later used.}
+\\[0.3cm]
+Jun 2004 -- Dec 2004 & \textbf{Programmer at Applied Software Consultants, Bratislava, Slovakia} \\
+& {\smallfont I was a software engineer in a small family-run company that
+develops software for elementary schools and high schools. I worked on a desktop
+application that keeps track of students, their grades, etc. The work was done in
+C\# and PHP.}
+\end{longtable}
+
+\section*{Technical Skills}
 
 \begin{itemize}
-\item C, C++, C\#, Python, Java, Scala, PHP, Perl, HTML, CSS, Matlab, Maple, LaTeX
-\item Language skills: fluent English, basic German, native Slovak, quasi-native Czech
+\item C, C++, C\#, Python, Java, Scala, PHP, Perl, HTML, CSS, Maple, LaTeX
 \end{itemize}
 
 \section*{Service}
 
 \begin{itemize}
 \item Area chair of NIPS 2018, 2019
-\item Program Comittee member of COLT 2017
-\item Reviewer for ICML 2016--2018; NIPS 2008--2014, 2016; COLT 2007, 2008, 2016, 2019, 2021, 2022; AISTATS 2017--2018; STOC 2008; AAAI 2016; IJCAI 2016; ALT 2022.
+\item Program Committee member of COLT 2017
+\item Reviewer for ICML 2016--2018; NIPS 2008--2014, 2016; COLT 2007, 2008, 2016, 2019--2023; AISTATS 2017--2018; STOC 2008; AAAI 2016; IJCAI 2016; ALT 2022, 2023.
 \item Organizer of the Internet Problem Solving Contest, \url{http://ipsc.ksp.sk/}, 2000 -- 2004, 2007
 \item Organizer of correspondence seminars in mathematics and computer science for Slovak high school students 1999 -- 2004.
 \end{itemize}
@@ -131,6 +126,8 @@ Sep 1999 -- May 2004 & \textbf{``Magister Degree'' in Computer Science,} \\
 \section*{Awards}
 
 \begin{itemize}
+\item co-author of a patent: ``Distributed algorithm for solving the generalized knapsack problem'' (Application no. 63/407,644)
+\item co-author of a patent: ``Accounting for variable dimensions of content items when positioning content items in a user interface having slots for displaying content items`` (US 20230109298 A1)
 \item co-author of a patent: ``Message classification'' (US 20180159808 A1)
 \item co-author of a patent: ``Allocation of content inventory units'' (US 20160364766 A1)
 \item co-author of a patent: ``Passback auction'' (US 20140316922 A1)

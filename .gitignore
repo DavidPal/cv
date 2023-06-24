@@ -2,8 +2,11 @@
 *.pdf
 *.bbl
 *.blg
+*.brf
 *.idx
 *.log
 *.nav
 *.out
 *.toc
+
+.idea/
