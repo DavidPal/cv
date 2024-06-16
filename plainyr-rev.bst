@@ -2,7 +2,7 @@
 %% Author: Christian Plessl <christian@plesslweb.ch>
 %%
 %% This BibTeX style formats bibliographic entries like the plain style
-%% but sorts them in reverse chronological order, i.e., the newest 
+%% but sorts them in reverse chronological order, i.e., the newest
 %% references are listed first.
 %%
 %% The style is almost identical to plainyr.bst, but changes only the sorting
@@ -1073,9 +1073,9 @@ FUNCTION {sort.format.month}
     if$
     }
   if$
- 
+
 }
- 
+
 FUNCTION {sort.format.title}
 { 't :=
   "A " #2
@@ -1175,9 +1175,9 @@ STRINGS { tmpyear }
 FUNCTION {reverse.year}
 {
  % ensure four digit year
- year empty$ 
-   { "9999" "missing year in " cite$ * ", using 9999 for sorting" * warning$ }  
-   { year text.length$ #4 = 
+ year empty$
+   { "9999" "missing year in " cite$ * ", using 9999 for sorting" * warning$ }
+   { year text.length$ #4 =
        { year }
        { "9999" "year not 4-digit in " cite$ * ", using 9999 for sorting" * warning$ }
      if$
@@ -1189,13 +1189,13 @@ FUNCTION {reverse.year}
 
  #5 'pos := % index into year, we pre-decrement, will enter body with 4..1
  { pos #1 - 'pos := pos }
- { 
+ {
    % extract digit at pos, convert to ASCII, subtract 48 -> 0..9, store in k
    tmpyear pos #1 substring$ chr.to.int$ #48 - 'k :=
 
    { k duplicate$ #1 - 'k := }
    {
-     pos #1 = 
+     pos #1 =
        { res #1000 + 'res := }
 	{
 	  pos #2 =
@@ -1204,7 +1204,7 @@ FUNCTION {reverse.year}
 	      pos #3 =
 		{ res #10 + 'res := }
 		{ res #1 + 'res := }
-	      if$ 
+	      if$
 	    }
 	  if$
 	}
@@ -1214,7 +1214,7 @@ FUNCTION {reverse.year}
  }
  while$
 
- #9999 res - 
+ #9999 res -
  int.to.str$
 }
 
@@ -1299,4 +1299,3 @@ FUNCTION {end.bib}
 }
 
 EXECUTE {end.bib}
-
